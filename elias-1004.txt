@@ -1,0 +1,23 @@
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+#indagar uma pessoa 4 vezes se ela foi 
+#pro role da daniele.
+#caso a pessoa tenha ido 2 vezes para o role
+#ela receberá uma punição.
+#caso não tenha ido pelo menos duas vezes,
+#ela receberá um abraço
+aux = 0 #controla a condição de repetição
+sim = 0 #guarda a soma da qtd de vezes que o usuario disse sim
+while(aux < 4):
+    print("você foi ao Role da Daniele?") #escreve tela
+    resposta = input() #lê a resposta do usuario
+    if(resposta == "sim"): #se a resposta for sim
+        sim = sim + 1 #soma a quantidade de vezes que o usuario disse sim
+    aux = aux + 1 #incrementa o aux para controlar o loop/repetição
+if(sim >= 2): #verifica a qnt de vezes que o usuario disse sim
+    print("peia!")
+    print(sim) #imprime a quantidade de vezes que o usuario disse sim
+else:
+    print("abraço")
+    print(sim) #imprime a quantidade de vezes que o usuario disse sim
