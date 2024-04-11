@@ -1,0 +1,9 @@
+print("Instagram")
+print("Digite seu nome de usuário e senha")
+nomeusuario = input() #lê texto
+senha = input() #lê texto
+if(nomeusuario == "marcao_jogador" && senha == "banana123"): #faz uma verificação composta usando um conectivo lógico E
+    print("Logado com sucesso")
+else:
+    print("usuario ou senha inválidos")
+    
