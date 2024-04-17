@@ -1,0 +1,14 @@
+A = int(input())
+B = int(input())
+SOMA = A + B
+print("SOMA = " + str(SOMA))
+
+valor1 = int(input())
+valor2 = int(input())
+PROD = valor1 * valor2
+print("PROD = " + str(PROD))
+
+A = float(input())
+B = float(input())
+MEDIA = A + B / 2
+print("MEDIA = %.5f"%MEDIA)
