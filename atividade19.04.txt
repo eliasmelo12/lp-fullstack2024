@@ -1,0 +1,10 @@
+# Online Python - IDE, Editor, Compiler, Interpreter 
+n = 1 #variável que controla repetição
+soma = 0 # soma a quantidade de numeros positivos
+while(n <= 6):
+    aux = float(input()) #variável quw guarda a entrada do usuário
+    n = n + 1
+    if(aux > 0):
+        soma = soma + 1
+print(str(soma) + " valores positivos")
+    
