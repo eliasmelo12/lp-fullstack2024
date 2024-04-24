@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<script>
+			let aux = 0 //Controla a condição de repetição
+			let sim = 0 //Guarda a soma da qnt de vezes que o usuário disse sim
+			while(aux < 4){
+				resposta = prompt("Você foi ao role da daniele?"); //Entrada do usuário
+				if(resposta == "sim"){ //se a resposta for sim
+					sim = sim + 1 //soma a qnt de vzes que o susario disse sim
+				
+				}
+				aux = aux + 1 //incrementa o aux para controlar a repetição
+				
+			}
+			if(sim >= 2){ //verifica a qnt e vezes que o usuário disse sim
+				document.write("peia!");
+				document.write(sim); //imprime a quantidade de vezes que o usuário disse sim
+
+			}else{
+				document.write("abraço");
+				document.write(sim);
+			}
+
+		</script>
+
+
+	</body>
+</html> 
+
