@@ -1,0 +1,31 @@
+<script>
+let valor;
+let passageiros = prompt("LENDO QTD PASSAGEIROS"); //leia o numero de passageiros
+let crianca = prompt("QAUNTIDADE DE CRIANÇAS");
+let idoso = prompt("QUANTIDADE DE IDOSOS")
+let tipo = prompt("LENDO O DESTINO") //leitura de teclado
+passageiros -= crianca;
+passageiros -= idoso;
+if (tipo == "n" && passageiros >= 0) //condiçao 
+{
+	valor = passageiros * 3000; //guarda a multiplicação 
+	crianca = crianca * 1500;
+	valor += crianca;
+	idoso = idoso * 2500;
+	valor += idoso;
+	
+}
+else if(tipo == "i" && passageiros >= 0) //condição para executar outra ação 
+{
+	valor = passageiros * 5000;
+	crianca = crianca * 3000;
+	valor += crianca;
+	idoso = idoso * 2500;
+	valor += idoso;
+
+}
+console.log(valor);
+
+
+
+</script>
