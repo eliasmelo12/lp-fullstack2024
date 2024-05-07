@@ -1,0 +1,26 @@
+<script>
+let escolha; //variável que guarda a escolha do jogador 
+let escolhaCPU; //variável que guarda a escolha da cpu
+	//jokenpo
+let jogador1 = 0; //variável qe guarda a pontuação do jogador 1
+let CPU = 0 ; // variável que guarda a pontuação da CPU
+while(jogador1 < 3 && CPU < 3){ //Condição para estruturar a repetição
+	escolha = prompt("Escolha: " + "  PEDRA  PAPEL  TESOURA");
+	console.log( jogador1  + "jogador" + " VS "  +  CPU + "CPU" ) //imprimir na tela
+
+let escolhaCPU = Math.floor(Math.random()*3 + 1);
+if(escolha == 1 && escolhaCPU == 3 || escolha == 2 && escolhaCPU == 1 || escolha == 3 && escolhaCPU == 2){
+	//AUMENTA PONTUAÇÃO DO PLAYER
+	jogador1+=1
+	console.log("Ponto jogador 1");
+
+}else if(escolha == escolhaCPU){
+	console.log("Empate");
+	//empate
+}else{
+	//ponto cpu
+	CPU+=1
+	console.log("Ponto CPU");
+}
+}
+</script>
