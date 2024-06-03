@@ -1,0 +1,31 @@
+<script>
+let media = 0; //Variável que guarda a média
+let aux; //Controlçe da nossa repetição
+let tam = parseInt(prompt("Defina o tamanho do array")); //Definição do tama. do array
+let lista = new Array(tam); //criação de um array
+console.log(lista); ///Imprimit na tela
+for(let i = 0; i < lista.length; i++){ //Estrutura de repetição
+    aux = parseInt(prompt("Nota do aluno")); //Entrada de dados; conteúdo do array
+    lista[i] = aux; //preenchendo o conteúdo do array
+}
+console.log(lista); //Imprimir na tela
+for(let i = 0; i < lista.length; i++){ //Estrutura de repetição
+media += lista[i] //Soma da entrada dos dados
+}
+media = media/lista.length; //Calculo realizado para obter a media
+console.log(media); //Imrpimir na tela a media dos dados
+if(media >= 7){
+    console.log("Aluno Aprovado")
+}
+else if(media >= 5 && media <=6.99){
+    console.log("Em Recuperação")
+}
+else{
+    console.log("Aluno Reprovado")
+}
+
+
+
+
+
+</script>
