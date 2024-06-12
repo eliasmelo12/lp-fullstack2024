@@ -1,12 +1,13 @@
 <script>
-aux = 0;
-let seq = 10;
-let num = parseInt(prompt());
-for(let i = 0; i < seq; i++){
-    aux = num;
-    aux += num;
-    console.log(num);
+let valor = parseInt(prompt());
+let vetor = new Array(5);
+let numero = 0;
+for(let i = 0; i < vetor.length; i++){
+    numero = vetor[i - 1] + vetor[vetor.length - 1];
+    vetor.push(vetor[i]);
+    console.log(vetor)
+} 
 
-}
+
 
 </script>
