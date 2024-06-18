@@ -11,7 +11,7 @@ header{
 }
 a{
     color:black;
-    margin: 10px;
+    margin: 50px;
     text-decoration:none;
 }
 footer{
@@ -19,18 +19,26 @@ footer{
     color:rgb(0, 0, 0);
     Padding: 10px;
     text-align: center;
-    bottom: 0;
+    bottom: 100;
     position: absolute;
     width: 100%;
 }
 .container{
     display: grid;
+    justify-items: center;
     padding: 20px;
     grid-gap: 10px;
-    margin: 20px;
+    margin: auto;
+    height: 100%;
 
 }
 .linha{
     display: flex;
-    
+    justify-content: space-between;
+    padding: 20px;
+}
+.coluna{
+    flex: 1;
+    background-color: black;
+    padding: 15px;
 }
